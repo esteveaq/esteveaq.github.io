@@ -1,10 +1,15 @@
 ---
 title: "Esteve Aqachmar"
+format: 
+  html:
+    mainfont: "Helvetica Neue, Trebuchet MS, Sans-Serif"
 about: 
   template: solana
   image: profile.jpg
   image-width: 10em
   links:
+    - text: CV
+      url: "resume.pdf"
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/esteveaqachmar/
@@ -15,22 +20,29 @@ about:
       text: Github
       href: https://github.com/esteveaq
 ---
+New York based business development professional experienced in risk management & business transformation with a focus on analytics. Lead multiple programs within Fortune Global 500 companies. My passion is to unite people and technology to build impactful insights 📊
 
-Business development professional experienced in risk management & business transformation with a focus on analytics. My passion is to unite people and technology to build impactful insights 📊
 
 ## Experience
 
-**M&A Risk Management**\
-Ministry of Finance and Economy \| 2021 - 2023
 
-**Product Strategy — PMO**\
-Thales Group (Fortune Global 500) \| 2018 - 2021
+**Ministry of Finance and Economy**\
+M&A Risk Management
 
-**Market Intelligence**\
-National Center for Space Studies in Japan \| 2015 - 2017
 
-**Competitive Intelligence**\
-Airbus Defence and Space \| 2013 - 2014
+**Thales Group**\
+Product Strategy — PMO\
+
+
+**National Center for Space Studies**\
+Market Intelligence\
+
+
+**Airbus Defence and Space**\
+Competitive Intelligence\
+
+## Skills
+Business Transformation \| Risk Management \| Product Strategy \| Data Analytics
 
 ## Education
 
@@ -38,6 +50,3 @@ Airbus Defence and Space \| 2013 - 2014
 MA International Business Affairs\
 MA Law, Economy, Management\
 
-## Skills
-
-Business Transformation \| Product Strategy \| Data governance \| Data Analytics \| Design Thinking \| Agile

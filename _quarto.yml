@@ -24,20 +24,20 @@ website:
   page-footer:
     center:
       - text: "Home"
-        href: https://esteveaq.github.io/hello/
+        href: https://esteveaq.github.io/
       - icon: linkedin
         href: https://www.linkedin.com/in/esteveaqachmar/
       - icon: twitter-x
         href: https://twitter.com/esteveaqa
       - icon: github
         href: https://github.com/esteveaq 
-      - text: "2024"
+      - text: "2025"
     background: "#243B9D"
 
 format:
   html:
     theme: cosmo
-    css: styles.css
+ #   css: styles.css
     toc: false
 
 
