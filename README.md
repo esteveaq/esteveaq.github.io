@@ -1,4 +1,4 @@
-# Persona website and portfolio
+# Personal website and portfolio
 
 This is my personal website presenting my background, skills and contact details.
 
