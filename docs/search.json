@@ -4,7 +4,7 @@
     "href": "posts/20250123/opendata.html",
     "title": "Open Data project",
     "section": "",
-    "text": "Project\nBuilding an open data project for the city of Antibes, France to promote the publication of higher quality datasets. The project includes:\n\nGithub repository\nWebsite\nContributions to the data.gouv.fr platform\n\n\n\nLearnings\nLearnings include a mix of problem solving, visual communication and technical knowledge:\n\nReal-world data wrangling\nData visualization best practices\nGit and Github practice\nStatic reporing framework (html rendering)\n\n\n\nOverview\n\n\n\nLinks\nWebsite esteveaq.github.io/antibesdata\nRepo github.com/esteveaq/antibesdata"
+    "text": "Project\nBuilding an open data project for the city of Antibes, France to promote the publication of higher quality datasets. The project includes:\n\nGithub repository\nWebsite\nContributions to the data.gouv.fr platform\n\n\n\nLearnings\nLearnings include problem solving, visual communication and technical knowledge:\n\nData wrangling\nData visualization\nVersioning : Git and Github\nStatic reporing framework (html rendering)\n\n\n\nOverview\n\n\n\nLinks\nWebsite esteveaq.github.io/antibesdata\nRepo github.com/esteveaq/antibesdata"
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html",
@@ -144,7 +144,7 @@
     "href": "index.html#skills",
     "title": "Esteve Aqachmar",
     "section": "Skills",
-    "text": "Skills\nBusiness Transformation | Risk Management | Product Strategy | Data Analytics"
+    "text": "Skills\nRisk Management | Product Strategy | Data Analytics"
   },
   {
     "objectID": "index.html#education",
