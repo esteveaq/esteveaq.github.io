@@ -21,7 +21,7 @@ Building an open data project for the city of Antibes, France to promote the pub
 
 -   [Github repository](https://github.com/esteveaq/antibesdata)
 -   [Website](https://esteveaq.github.io/antibesdata)
--   Contributions to the data.gouv.fr platform
+-   [Contributions](https://www.data.gouv.fr/fr/organizations/antibesdata/#/reuses) to the data.gouv.fr platform
 
 # Learnings
 
@@ -30,8 +30,6 @@ Learnings include a mix of problem solving, visual communication and technical k
 -   Real-world data wrangling
 -   Data visualization best practices
 -   Git and Github practice
--   Google Analytics and cookie management
--   DNS and subdomains management
 -   Static reporing framework (html rendering)
 
 # Overview

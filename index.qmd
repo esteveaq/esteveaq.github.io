@@ -20,33 +20,34 @@ about:
       text: Github
       href: https://github.com/esteveaq
 ---
+
 New York based business development professional experienced in risk management & business transformation with a focus on analytics. Lead multiple programs within Fortune Global 500 companies. My passion is to unite people and technology to build impactful insights 📊
 
-
 ## Experience
-
 
 **Ministry of Finance and Economy**\
 M&A Risk Management
 
-
 **Thales Group**\
 Product Strategy — PMO\
 
-
 **National Center for Space Studies**\
 Market Intelligence\
-
 
 **Airbus Defence and Space**\
 Competitive Intelligence\
 
 ## Skills
+
 Business Transformation \| Risk Management \| Product Strategy \| Data Analytics
+
+## Certifications
+
+Amazon Web Services (AWS) Certified Cloud Practitioner ([view](https://www.credly.com/badges/fee26a74-e48d-4463-a447-c8adb12a0011/linked_in_profile))\
+Google Data Analytics Professional Certificate ([view](https://www.credly.com/badges/a144d566-faae-4cb4-9a0a-1531843c7a9f/public_url))
 
 ## Education
 
 **Political Science Institute of Aix \| France**\
 MA International Business Affairs\
 MA Law, Economy, Management\
-

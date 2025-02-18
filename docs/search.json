@@ -1,45 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Esteve Aqachmar",
+    "objectID": "posts/20250123/opendata.html",
+    "href": "posts/20250123/opendata.html",
+    "title": "Open Data project",
     "section": "",
-    "text": "New York based business development professional experienced in risk management & business transformation with a focus on analytics. Lead multiple programs within Fortune Global 500 companies. My passion is to unite people and technology to build impactful insights 📊"
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Esteve Aqachmar",
-    "section": "Experience",
-    "text": "Experience\nMinistry of Finance and Economy\nM&A Risk Management\nThales Group\nProduct Strategy — PMO\n\nNational Center for Space Studies\nMarket Intelligence\n\nAirbus Defence and Space\nCompetitive Intelligence"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Esteve Aqachmar",
-    "section": "Education",
-    "text": "Education\nPolitical Science Institute of Aix | France\nMA International Business Affairs\nMA Law, Economy, Management"
-  },
-  {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
-    "title": "Esteve Aqachmar",
-    "section": "Skills",
-    "text": "Skills\nBusiness Transformation | Risk Management | Product Strategy | Data Analytics"
-  },
-  {
-    "objectID": "index.html#tools",
-    "href": "index.html#tools",
-    "title": "Esteve Aqachmar",
-    "section": "Tools",
-    "text": "Tools\n\n\n\n\n\n\n\nAdvanced\nExcel, PowerQuery, PowerBI\n\n\nIntermediate\nR & Rstudio, Tidyverse, Google Sheets\n\n\nBeginner\nSQL, BigQuery, Linux, Git & Github, Tableau Public, Python, APIs"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Open Data project\n\n\n\nProject\n\n\nR\n\n\n\nInsights from real-world data\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomated report\n\n\n\nMemo\n\n\nR\n\n\n\nGenerating PowerPoint slides using R\n\n\n\n\n\n\nJun 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData vizualisation\n\n\n\nMemo\n\n\nR\n\n\n\nMemo for data visualization\n\n\n\n\n\n\nMay 31, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Project\nBuilding an open data project for the city of Antibes, France to promote the publication of higher quality datasets. The project includes:\n\nGithub repository\nWebsite\nContributions to the data.gouv.fr platform\n\n\n\nLearnings\nLearnings include a mix of problem solving, visual communication and technical knowledge:\n\nReal-world data wrangling\nData visualization best practices\nGit and Github practice\nStatic reporing framework (html rendering)\n\n\n\nOverview\n\n\n\nLinks\nWebsite esteveaq.github.io/antibesdata\nRepo github.com/esteveaq/antibesdata"
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html",
@@ -67,7 +32,7 @@
     "href": "posts/20240531/ggplotmemo.html#create-data-frame",
     "title": "Data vizualisation",
     "section": "Create data frame",
-    "text": "Create data frame\n\n# create tibbles by combining vectors\nevolution &lt;-\n  tibble(dates, sectors, regions, dealsize, revenues)\n  \n#convert character variables to factors\nevolution &lt;-\n  evolution %&gt;%\n  mutate_if(sapply(evolution, is.character), as.factor) %&gt;% \n  print()\n\n# A tibble: 400 × 5\n   dates      sectors regions dealsize revenues\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt;\n 1 2014-01-13 radio   APAC         269      557\n 2 2014-02-10 space   APAC         717      635\n 3 2014-04-27 radio   EMEA         675      242\n 4 2014-05-07 ground  APAC         951      688\n 5 2014-05-17 land    EMEA         372      402\n 6 2014-05-21 sea     AUS          517      483\n 7 2014-05-31 radio   APAC          56      686\n 8 2014-06-02 land    EMEA          77      280\n 9 2014-06-09 air     EMEA         471      584\n10 2014-06-14 radio   EMEA         348      613\n# ℹ 390 more rows\n\n#filter year\nevolution &lt;-\n  evolution %&gt;%\n  filter(dates &gt; \"2015-01-01\", \n         dates &lt; \"2023-01-01\")"
+    "text": "Create data frame\n\n# create tibbles by combining vectors\nevolution &lt;-\n  tibble(dates, sectors, regions, dealsize, revenues)\n  \n#convert character variables to factors\nevolution &lt;-\n  evolution %&gt;%\n  mutate_if(sapply(evolution, is.character), as.factor) %&gt;% \n  print()\n\n# A tibble: 400 × 5\n   dates      sectors regions dealsize revenues\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt;\n 1 2014-01-13 radio   NAM          285       56\n 2 2014-02-10 space   LATAM        148      148\n 3 2014-04-27 land    LATAM         93      385\n 4 2014-05-07 radio   APAC         269      442\n 5 2014-05-17 space   APAC         717      457\n 6 2014-05-21 radio   EMEA         675      581\n 7 2014-05-31 ground  APAC         951      362\n 8 2014-06-02 land    EMEA         372      680\n 9 2014-06-09 sea     AUS          517      237\n10 2014-06-14 radio   APAC          56      195\n# ℹ 390 more rows\n\n#filter year\nevolution &lt;-\n  evolution %&gt;%\n  filter(dates &gt; \"2015-01-01\", \n         dates &lt; \"2023-01-01\")"
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html#set-theme",
@@ -77,109 +42,11 @@
     "text": "Set theme\n\ntheme_set(theme_minimal())"
   },
   {
-    "objectID": "posts/20240531/ggplotmemo.html#using-gghighlight",
-    "href": "posts/20240531/ggplotmemo.html#using-gghighlight",
-    "title": "Data vizualisation memo",
-    "section": "Using gghighlight",
-    "text": "Using gghighlight\n\n\nCode\nplot.line +\ngghighlight(sectors == \"space\")"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#using-facets-gghighlight",
-    "href": "posts/20240531/ggplotmemo.html#using-facets-gghighlight",
-    "title": "Data vizualisation memo",
-    "section": "Using facets + gghighlight",
-    "text": "Using facets + gghighlight\n\n\nCode\n# No need for gghighlight here\nplot.line + \n  facet_wrap(~sectors)\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Highlighting segments with gghighlight\nplot.line +\n  gghighlight(label_params = list(size = 3)) + #adjust size of labels\n  facet_wrap(~sectors) + \ntheme(\n  strip.text.x = element_blank() #remove titles from facets\n)\n\n\n\n\n\n\n\n\n\n\n\nCode\n# With multiple gghighlights\nplot.line +\ngghighlight(sectors %in% c(\"space\", \"radio\"), \n            label_params = list(nudge_x = 2))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome thoughts\n\n\n\n\nFor fun we could try library(geomtextpath)\nFor better reliability we could add labels without using additional packages:  https://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines (answered Jul 2, 2018 at 15:57)"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#summary-stats",
-    "href": "posts/20240531/ggplotmemo.html#summary-stats",
-    "title": "Data vizualisation",
-    "section": "Summary stats",
-    "text": "Summary stats\n\n\nCode\ndata.evolution.summary &lt;-\n  evolution %&gt;%\n  group_by(sectors) %&gt;%\n  summarize(meandeal = mean(dealsize), \n            mediandeal = median(dealsize), \n            max = max(dealsize), \n            min = min(dealsize), \n            IQR = IQR(dealsize), \n            NBdeals = n()) %&gt;%\n  arrange(mediandeal)\ndata.evolution.summary\n\n\n# A tibble: 6 × 7\n  sectors meandeal mediandeal   max   min   IQR NBdeals\n  &lt;fct&gt;      &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;   &lt;int&gt;\n1 air         391.        327   981     5   292      23\n2 radio       465.        432   978    11   547      57\n3 land        464.        433   964     4   456      81\n4 space       524.        535   993     2   542      61\n5 ground      475.        536   974     1   489      34\n6 sea         600.        658   993    35   594      51\n\n\nCode\n# Note : it is also possible to use a library such as Janitor for this."
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#sum",
-    "href": "posts/20240531/ggplotmemo.html#sum",
-    "title": "Data vizualisation",
-    "section": "Sum",
-    "text": "Sum\nWhich is the most important sector in terms of deal size ?\n\n\nCode\nplot.bar.vertical.sum &lt;- \nevolution %&gt;%\n  group_by(sectors) %&gt;%\n  summarise(sumdeal = sum(dealsize)) %&gt;%\n  ggplot(mapping = aes(x = fct_reorder(sectors, sumdeal), y = sumdeal)) +\n  geom_col() +\n  geom_text(aes(label = sumdeal), \n                vjust = 2, \n                size = 4,\n                color = \"white\") + \n  labs(x = NULL)\n  \nplot.bar.vertical.sum +\n  labs(title = \"Sum of deals' value per sector\",\n       subtitle = \"In USD\",\n       x = NULL)\n\n\n\n\n\n\n\n\n\nCode\nplot.bar.vertical.sum"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#distribution",
-    "href": "posts/20240531/ggplotmemo.html#distribution",
-    "title": "Data vizualisation memo",
-    "section": "Distribution",
-    "text": "Distribution\nHow are the deals distributed in terms of deal size ?\n\n\nCode\n## Distribution of deal size\nL &lt;-\nevolution %&gt;%\n  ggplot(aes(x = dealsize)) +\n  geom_histogram(binwidth = 20) \nL"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#density",
-    "href": "posts/20240531/ggplotmemo.html#density",
-    "title": "Data vizualisation",
-    "section": "Density",
-    "text": "Density\n\n\nCode\n## Density of deal size per sector\nplot.density &lt;-\nevolution %&gt;%\n  ggplot(aes(x = dealsize, fill = sectors)) +\n  geom_density(alpha = 0.3) +\n  geom_rug(alpha = 0.6) + #lower part of graph\n  facet_wrap(~sectors)\nplot.density"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#boxplot",
-    "href": "posts/20240531/ggplotmemo.html#boxplot",
-    "title": "Data vizualisation",
-    "section": "Boxplot",
-    "text": "Boxplot\n\n\nCode\nplot.boxplot &lt;-\nevolution %&gt;%\n  group_by(sectors) %&gt;%\n  mutate(mediandeal = median(dealsize)) %&gt;%\n  ggplot(mapping = aes(x = fct_reorder(sectors, mediandeal), y = dealsize)) +\n  geom_boxplot() +\n  geom_jitter(width = 0.1, alpha = 0.4) +\n  labs(title = \"Deal size distribution per sector\",\n       subtitle = \"In USD\",\n       x = \"Sector\") +\n  coord_flip()\nplot.boxplot\n\n\n\n\n\n\n\n\n\n\n\nCode\nplot.boxplot.color &lt;-\nevolution %&gt;%\n  group_by(sectors) %&gt;%\n  mutate(mediandeal = median(dealsize)) %&gt;%\n  ggplot(mapping = aes(x = fct_reorder(sectors, mediandeal), y = dealsize)) +\n  geom_boxplot(fill = \"blue3\", alpha = 0.1, color = \"blue3\") +\n  geom_jitter(aes(color = sectors), width = 0.1, alpha = 0.4) +\n  labs(title = \"Deal size distribution per sector\",\n       subtitle = \"In USD\",\n       x = \"Sector\") +\n  guides(color = guide_legend(override.aes = list(size = 5))) + #increase legend items size\n  coord_flip()\nplot.boxplot.color\n\n\n\n\n\n\n\n\n\nCode\nggsave(\"plot.boxplot.color.png\")\n\n\nSaving 7 x 5 in image"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#bubble-charts",
-    "href": "posts/20240531/ggplotmemo.html#bubble-charts",
-    "title": "Data vizualisation memo",
-    "section": "Bubble charts",
-    "text": "Bubble charts\n\n\nCode\nplot.bubble &lt;-\nevolution %&gt;%\n  ggplot(aes(x = dates, y = dealsize, size = (revenues/100))) +\n  geom_point(color= \"gray\", alpha = 0.5)\nplot.bubble\n\n\n\n\n\n\n\n\n\n\n\nCode\nplot.bubble.highlight &lt;-\nplot.bubble +\n  geom_point(data = evolution %&gt;% filter(evolution$sectors == \"radio\"), \n             alpha = 0.5, \n             color = \"magenta\")\nplot.bubble.highlight\n\n\n\n\n\n\n\n\n\n\n\nCode\n#Highlight with conditionality on deal size\nplot.bubble.highlight2 &lt;-\nplot.bubble +\n  geom_point(data = evolution %&gt;% filter(evolution$dealsize &gt; 900), \n             alpha = 0.5, \n             color = \"red\")\nplot.bubble.highlight2"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#create-data",
-    "href": "posts/20240531/ggplotmemo.html#create-data",
-    "title": "Data vizualisation memo",
-    "section": "Create data",
-    "text": "Create data\n\n\nCode\n#get year, month, week\n  weekcount &lt;-\n  evolution %&gt;%\n    mutate(year = year(dates), \n           month = month(dates, label = TRUE, abbr= TRUE), \n           wk = week(dates))\nweekcount\n\n\n# A tibble: 326 × 8\n   dates      sectors regions dealsize revenues  year month    wk\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;ord&gt; &lt;dbl&gt;\n 1 2015-01-08 space   EMEA         681      661  2015 Jan       2\n 2 2015-01-09 radio   LATAM        425      785  2015 Jan       2\n 3 2015-01-21 space   LATAM         39      406  2015 Jan       3\n 4 2015-02-17 land    EMEA         242      192  2015 Feb       7\n 5 2015-04-03 ground  EMEA         876      340  2015 Apr      14\n 6 2015-04-18 radio   APAC         504      309  2015 Apr      16\n 7 2015-04-22 space   LATAM        215      569  2015 Apr      16\n 8 2015-04-25 space   AUS          902      484  2015 Apr      17\n 9 2015-05-31 radio   APAC         928      248  2015 May      22\n10 2015-06-10 sea     EMEA         103      374  2015 Jun      23\n# ℹ 316 more rows"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#week",
-    "href": "posts/20240531/ggplotmemo.html#week",
-    "title": "Data vizualisation",
-    "section": "Week",
-    "text": "Week\n\n\nCode\n  #plot week intensity for each year with heat map with geom_tile()\nplot.heatmap.weekcount &lt;-\n  data.heatmap.weekcount %&gt;%\n  group_by(year) %&gt;%\n  count(wk) %&gt;%\n  ggplot(aes(x = wk, y = year, fill = n)) +\n  geom_tile(color=\"white\", linewidth = 0.1) + #use color and size to draw borders\n  coord_equal() + #draw nice squares instead of rectangles \n  scale_fill_viridis(name=\"# Deals\", option = \"plasma\") +\n  theme(\n  panel.background = element_rect(fill = NA, color = NA), # Background of plotting area \n  )\nplot.heatmap.weekcount"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#month",
-    "href": "posts/20240531/ggplotmemo.html#month",
-    "title": "Data vizualisation",
-    "section": "Month",
-    "text": "Month\n\n\nCode\n  #plot month intensity for each year with heat map with geom_tile()\nplot.heatmap.monthcount &lt;-  \ndata.heatmap.weekcount %&gt;%\n  group_by(year) %&gt;%\n  count(month) %&gt;% #change count to month\n  ggplot(aes(x = month, y = year, fill = n)) + #change x to month\n  geom_tile(color=\"white\", linewidth = 0.1) + #use color and size to draw borders\n  coord_equal() + #draw nice squares instead of rectangles\n  theme(\n  panel.background = element_rect(fill = NA, color = NA)   # Background of plotting area \n  ) + \n  geom_text(aes(label=n), color=\"grey\", size=3) # adding labels\nplot.heatmap.monthcount"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#creating-the-dataset",
-    "href": "posts/20240531/ggplotmemo.html#creating-the-dataset",
-    "title": "Data vizualisation memo",
-    "section": "Creating the dataset",
-    "text": "Creating the dataset\n\nCreate objects\n\n# Create and sample random dates\nDatesx &lt;- seq.Date(from = as.Date(\"2014-01-01\"), to = Sys.Date(), by = 1)\nset.seed(123)\nDatesFiles &lt;- sample(Datesx, size = 400, replace = TRUE)\nDatesFiles &lt;- sort(DatesFiles, decreasing = FALSE)\n\n# Create sectors and regions (categorical)\nsectors &lt;- sample(x = c(\"air\", \"space\", \"land\", \"sea\", \"ground\", \"radio\"), size = 400, replace = TRUE, prob=c(0.1, 0.2, 0.30, 0.2, 0.1, 0.2))\nregions &lt;- sample(x = c(\"NAM\", \"LATAM\", \"EMEA\", \"APAC\", \"AUS\"), size = 400, replace = TRUE, prob=c(0.1, 0.2, 0.40, 0.2, 0.1))\n\n# Create deal sizes and revenues (numeric)\ndealsize &lt;- sample(1:1000, size = 400, replace = TRUE)\nrevenues &lt;- round(rnorm(400, 20, 5)^2, 0)\n\n\n\nCreate data frame\n\n# create tibbles by combining vectors\nevolution &lt;-\n  tibble(DatesFiles, sectors, regions, dealsize, revenues)\n  \n#convert as character variables to factors\nevolution &lt;-\n  evolution %&gt;%\n  mutate_if(sapply(evolution, is.character), as.factor) %&gt;% \n  print()\n\n# A tibble: 400 × 5\n   DatesFiles sectors regions dealsize revenues\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt;\n 1 2014-01-13 sea     LATAM        778      185\n 2 2014-02-10 land    APAC          86      527\n 3 2014-03-17 sea     APAC          42      343\n 4 2014-03-24 land    EMEA         100      411\n 5 2014-04-27 land    EMEA         937      676\n 6 2014-05-07 radio   NAM           25      573\n 7 2014-05-17 sea     APAC         606      123\n 8 2014-05-21 space   APAC         180      476\n 9 2014-05-31 land    EMEA         293      351\n10 2014-06-02 ground  LATAM        896      346\n# ℹ 390 more rows\n\n#filter year\nevolution &lt;-\n  evolution %&gt;%\n  filter(DatesFiles &gt; \"2015-01-01\", \n         DatesFiles &lt; \"2023-01-01\")"
-  },
-  {
     "objectID": "posts/20240531/ggplotmemo.html#without-gghighlight",
     "href": "posts/20240531/ggplotmemo.html#without-gghighlight",
     "title": "Data vizualisation",
     "section": "Without gghighlight",
     "text": "Without gghighlight\nNow doing two things on this line plot :\n\nHighlighting one line without using the gghighlight package.\nGraphing cumulated dealsize, instead of count previously. We use the function cumsum()\n\n\n\nCode\n#create background line geoms (will be in grey)\ndata.evolutionback &lt;- \n  evolution %&gt;%\n    group_by(sectors) %&gt;%\n    arrange(dates) %&gt;%\n    mutate(evol = cumsum(dealsize))\n\n#create the highlighted line (will be in red)\ndata.evolutionfilt &lt;- data.evolutionback %&gt;% \n  filter(sectors == \"radio\")\n\n#plot\nplot.line.highlight &lt;- ggplot(data = data.evolutionback, mapping = aes(x = dates, y = evol, group = sectors)) + \n    geom_line(linewidth = 0.8, \n              color = \"gray85\") + #main lines in gray\n    geom_line(data = data.evolutionfilt, \n              linewidth = 0.8, \n              color = \"red\") + #highlight line in red\n  #add a dot at max value of line (max value of evol)\n    geom_point(data = data.evolutionfilt %&gt;% filter(data.evolutionfilt$evol == max(evol)), \n               color = \"red\", \n               size = 2) +\n  #add text label to end of line\n    geom_text(data = data.evolutionfilt %&gt;% filter(dates == last(dates)), \n              mapping = aes(label = sectors), \n              color = \"red\", \n              hjust = -0.2, \n              vjust = 0.1) + \n  # edit plot axis labels \n    labs(title = \"Cumulated value over time\",\n        subtitle = \"Radio segment\",\n         x = \"Time\", \n         y = \"Cumulated deal value\")\nplot.line.highlight\n\n\n\n\n\n\n\n\n\nTo allow labels to bleed past the canvas boundaries we could use coord_cartesian(clip = 'off')\nAdding a trend line with geom_smooth\n\n\nCode\nplot.line.highlight &lt;-\n  plot.line.highlight +\n# geom smooth trend line\ngeom_smooth(group = 1, color = \"black\", \n            linetype = \"dashed\", \n            linewidth = 0.4, se = FALSE, \n            method = \"loess\", \n            formula = y ~ x)\nplot.line.highlight\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Prepare data to get proportion per sector and per year\ndata.line.percent &lt;-\nevolution %&gt;%\n     mutate(year = year(dates)) %&gt;% #get year name\n     group_by(year, sectors) %&gt;% \n     summarise(n = length(dates)) %&gt;% #get length of vectors containing dates (a.k.a \"number of dates\"; for each sectors in each year)\n     group_by(year) %&gt;%\n     mutate(sumperyear = sum(n), \n            prop = (n/sumperyear*100)) #sum the total number of dates per year and get prop of \"each sectors for each year\" compared to total number of all sectors in a year\n    \n# Filter data for highlight\ndata.line.percent.filt &lt;- data.line.percent %&gt;% filter(sectors == \"radio\")\n\nplot.line.percent.highlight &lt;- \n  ggplot(data = data.line.percent, mapping = aes(x = year, y = prop, group = sectors)) +\n  geom_line(color = \"gray80\") + \n  geom_line(data = data.line.percent.filt, \n            color = \"red3\", \n            linewidth = 1) +\n  geom_point(data = data.line.percent.filt %&gt;% filter(year == max(data.line.percent.filt$year)), \n             color = \"red3\") +\n  geom_text(data = data.line.percent.filt %&gt;% filter(year == max(data.line.percent.filt$year)), \n            mapping = aes(label = paste0(round(prop), \"\", \"%\"), \n                          hjust = 0.5,\n                          vjust = -1,\n                          color = \"red3\", \n                          fontface = \"bold\")) + \n  theme(legend.position = \"none\") + \n  scale_y_continuous(limits = c(0,100)) +\n  labs(title = \"Proportion per year\",\n      subtitle = \"Radio sector\",\n      x = \"Year\",\n      y = \"Share (%)\")\nplot.line.percent.highlight"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#frequency",
-    "href": "posts/20240531/ggplotmemo.html#frequency",
-    "title": "Data vizualisation",
-    "section": "Frequency",
-    "text": "Frequency\nHow are the deals distributed in terms of deal size ?\n\n\nCode\n## Distribution of deal size\nplot.hist.dealsize &lt;-\nevolution %&gt;%\n  ggplot(aes(x = dealsize)) +\n  geom_histogram(binwidth = 20) \nplot.hist.dealsize"
-  },
-  {
-    "objectID": "posts/20240531/ggplotmemo.html#prepare-data",
-    "href": "posts/20240531/ggplotmemo.html#prepare-data",
-    "title": "Data vizualisation",
-    "section": "Prepare data",
-    "text": "Prepare data\n\n\nCode\n#get year, month, week\ndata.heatmap.weekcount &lt;-\n  evolution %&gt;%\n    mutate(year = year(dates), \n           month = month(dates, label = TRUE, abbr= TRUE), \n           wk = week(dates))\ndata.heatmap.weekcount\n\n\n# A tibble: 307 × 8\n   dates      sectors regions dealsize revenues  year month    wk\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;ord&gt; &lt;dbl&gt;\n 1 2015-01-08 land    APAC         100      294  2015 Jan       2\n 2 2015-01-09 sea     APAC         937      420  2015 Jan       2\n 3 2015-01-21 land    EMEA          25      316  2015 Jan       3\n 4 2015-02-17 land    EMEA         606      120  2015 Feb       7\n 5 2015-04-03 radio   NAM          180      451  2015 Apr      14\n 6 2015-04-18 sea     APAC         293      805  2015 Apr      16\n 7 2015-04-22 space   APAC         896      171  2015 Apr      16\n 8 2015-04-25 land    EMEA         539      663  2015 Apr      17\n 9 2015-05-31 ground  LATAM        713      627  2015 May      22\n10 2015-06-10 space   EMEA         211      482  2015 Jun      23\n# ℹ 297 more rows"
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html#with-gghighlight",
@@ -196,6 +63,97 @@
     "text": "With facets + gghighlight\n\n\nCode\n# No need for gghighlight here\nplot.line + \n  facet_wrap(~sectors)\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Highlighting segments with gghighlight\nplot.line +\n  gghighlight(label_params = list(size = 3)) + #adjust size of labels\n  facet_wrap(~sectors) + \ntheme(\n  strip.text.x = element_blank() #remove titles from facets\n)\n\n\n\n\n\n\n\n\n\n\n\nCode\n# With multiple gghighlights\nplot.line +\ngghighlight(sectors %in% c(\"space\", \"radio\"), \n            label_params = list(nudge_x = 2))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome thoughts\n\n\n\n\nFor fun we could try library(geomtextpath)\nFor better reliability we could add labels without using additional packages:  https://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines (answered Jul 2, 2018 at 15:57)"
   },
   {
+    "objectID": "posts/20240531/ggplotmemo.html#summary-stats",
+    "href": "posts/20240531/ggplotmemo.html#summary-stats",
+    "title": "Data vizualisation",
+    "section": "Summary stats",
+    "text": "Summary stats\n\n\nCode\ndata.evolution.summary &lt;-\n  evolution %&gt;%\n  group_by(sectors) %&gt;%\n  summarize(meandeal = mean(dealsize), \n            mediandeal = median(dealsize), \n            max = max(dealsize), \n            min = min(dealsize), \n            IQR = IQR(dealsize), \n            NBdeals = n()) %&gt;%\n  arrange(mediandeal)\ndata.evolution.summary\n\n\n# A tibble: 6 × 7\n  sectors meandeal mediandeal   max   min   IQR NBdeals\n  &lt;fct&gt;      &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;   &lt;int&gt;\n1 air         404.       326.   981     5  473.      22\n2 land        466.       433    964     4  452.      79\n3 radio       468.       440.   978    11  553.      56\n4 space       524.       535    993     2  542       61\n5 ground      475.       536    974     1  489       34\n6 sea         589.       654.   993    35  607.      52\n\n\nCode\n# Note : it is also possible to use a library such as Janitor for this."
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#sum",
+    "href": "posts/20240531/ggplotmemo.html#sum",
+    "title": "Data vizualisation",
+    "section": "Sum",
+    "text": "Sum\nWhich is the most important sector in terms of deal size ?\n\n\nCode\nplot.bar.vertical.sum &lt;- \nevolution %&gt;%\n  group_by(sectors) %&gt;%\n  summarise(sumdeal = sum(dealsize)) %&gt;%\n  ggplot(mapping = aes(x = fct_reorder(sectors, sumdeal), y = sumdeal)) +\n  geom_col() +\n  geom_text(aes(label = sumdeal), \n                vjust = 2, \n                size = 4,\n                color = \"white\") + \n  labs(x = NULL)\n  \nplot.bar.vertical.sum +\n  labs(title = \"Sum of deals' value per sector\",\n       subtitle = \"In USD\",\n       x = NULL)\n\n\n\n\n\n\n\n\n\nCode\nplot.bar.vertical.sum"
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#frequency",
+    "href": "posts/20240531/ggplotmemo.html#frequency",
+    "title": "Data vizualisation",
+    "section": "Frequency",
+    "text": "Frequency\nHow are the deals distributed in terms of deal size ?\n\n\nCode\n## Distribution of deal size\nplot.hist.dealsize &lt;-\nevolution %&gt;%\n  ggplot(aes(x = dealsize)) +\n  geom_histogram(binwidth = 20) \nplot.hist.dealsize"
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#density",
+    "href": "posts/20240531/ggplotmemo.html#density",
+    "title": "Data vizualisation",
+    "section": "Density",
+    "text": "Density\n\n\nCode\n## Density of deal size per sector\nplot.density &lt;-\nevolution %&gt;%\n  ggplot(aes(x = dealsize, fill = sectors)) +\n  geom_density(alpha = 0.3) +\n  geom_rug(alpha = 0.6) + #lower part of graph\n  facet_wrap(~sectors)\nplot.density"
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#boxplot",
+    "href": "posts/20240531/ggplotmemo.html#boxplot",
+    "title": "Data vizualisation",
+    "section": "Boxplot",
+    "text": "Boxplot\n\n\nCode\nplot.boxplot &lt;-\nevolution %&gt;%\n  group_by(sectors) %&gt;%\n  mutate(mediandeal = median(dealsize)) %&gt;%\n  ggplot(mapping = aes(x = fct_reorder(sectors, mediandeal), y = dealsize)) +\n  geom_boxplot() +\n  geom_jitter(width = 0.1, alpha = 0.4) +\n  labs(title = \"Deal size distribution per sector\",\n       subtitle = \"In USD\",\n       x = \"Sector\") +\n  coord_flip()\nplot.boxplot\n\n\n\n\n\n\n\n\n\n\n\nCode\nplot.boxplot.color &lt;-\nevolution %&gt;%\n  group_by(sectors) %&gt;%\n  mutate(mediandeal = median(dealsize)) %&gt;%\n  ggplot(mapping = aes(x = fct_reorder(sectors, mediandeal), y = dealsize)) +\n  geom_boxplot(fill = \"blue3\", alpha = 0.1, color = \"blue3\") +\n  geom_jitter(aes(color = sectors), width = 0.1, alpha = 0.4) +\n  labs(title = \"Deal size distribution per sector\",\n       subtitle = \"In USD\",\n       x = \"Sector\") +\n  guides(color = guide_legend(override.aes = list(size = 5))) + #increase legend items size\n  coord_flip()\nplot.boxplot.color\n\n\n\n\n\n\n\n\n\nCode\nggsave(\"plot.boxplot.color.png\")\n\n\nSaving 7 x 5 in image"
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#prepare-data",
+    "href": "posts/20240531/ggplotmemo.html#prepare-data",
+    "title": "Data vizualisation",
+    "section": "Prepare data",
+    "text": "Prepare data\n\n\nCode\n#get year, month, week\ndata.heatmap.weekcount &lt;-\n  evolution %&gt;%\n    mutate(year = year(dates), \n           month = month(dates, label = TRUE, abbr= TRUE), \n           wk = week(dates))\ndata.heatmap.weekcount\n\n\n# A tibble: 304 × 8\n   dates      sectors regions dealsize revenues  year month    wk\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;ord&gt; &lt;dbl&gt;\n 1 2015-01-08 air     APAC         778      411  2015 Jan       2\n 2 2015-01-09 land    APAC          86      462  2015 Jan       2\n 3 2015-01-21 sea     LATAM         42      263  2015 Jan       3\n 4 2015-02-17 land    APAC         100     1117  2015 Feb       7\n 5 2015-04-03 sea     APAC         937      314  2015 Apr      14\n 6 2015-04-18 land    EMEA          25      413  2015 Apr      16\n 7 2015-04-22 land    EMEA         606      541  2015 Apr      16\n 8 2015-04-25 radio   NAM          180      395  2015 Apr      17\n 9 2015-05-31 sea     APAC         293      282  2015 May      22\n10 2015-06-10 space   APAC         896      636  2015 Jun      23\n# ℹ 294 more rows"
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#week",
+    "href": "posts/20240531/ggplotmemo.html#week",
+    "title": "Data vizualisation",
+    "section": "Week",
+    "text": "Week\n\n\nCode\n  #plot week intensity for each year with heat map with geom_tile()\nplot.heatmap.weekcount &lt;-\n  data.heatmap.weekcount %&gt;%\n  group_by(year) %&gt;%\n  count(wk) %&gt;%\n  ggplot(aes(x = wk, y = year, fill = n)) +\n  geom_tile(color=\"white\", linewidth = 0.1) + #use color and size to draw borders\n  coord_equal() + #draw nice squares instead of rectangles \n  scale_fill_viridis(name=\"# Deals\", option = \"plasma\") +\n  theme(\n  panel.background = element_rect(fill = NA, color = NA), # Background of plotting area \n  )\nplot.heatmap.weekcount"
+  },
+  {
+    "objectID": "posts/20240531/ggplotmemo.html#month",
+    "href": "posts/20240531/ggplotmemo.html#month",
+    "title": "Data vizualisation",
+    "section": "Month",
+    "text": "Month\n\n\nCode\n  #plot month intensity for each year with heat map with geom_tile()\nplot.heatmap.monthcount &lt;-  \ndata.heatmap.weekcount %&gt;%\n  group_by(year) %&gt;%\n  count(month) %&gt;% #change count to month\n  ggplot(aes(x = month, y = year, fill = n)) + #change x to month\n  geom_tile(color=\"white\", linewidth = 0.1) + #use color and size to draw borders\n  coord_equal() + #draw nice squares instead of rectangles\n  theme(\n  panel.background = element_rect(fill = NA, color = NA)   # Background of plotting area \n  ) + \n  geom_text(aes(label=n), color=\"grey\", size=3) # adding labels\nplot.heatmap.monthcount"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Open Data project\n\n\n\nProject\n\n\nR\n\n\n\nInsights from real-world data\n\n\n\n\n\n\nJan 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomated report\n\n\n\nMemo\n\n\nR\n\n\n\nGenerating PowerPoint slides using R\n\n\n\n\n\n\nJun 2, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData vizualisation\n\n\n\nMemo\n\n\nR\n\n\n\nMemo for data visualization\n\n\n\n\n\n\nMay 31, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Esteve Aqachmar",
+    "section": "",
+    "text": "New York based business development professional experienced in risk management & business transformation with a focus on analytics. Lead multiple programs within Fortune Global 500 companies. My passion is to unite people and technology to build impactful insights 📊"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Esteve Aqachmar",
+    "section": "Experience",
+    "text": "Experience\nMinistry of Finance and Economy\nM&A Risk Management\nThales Group\nProduct Strategy — PMO\n\nNational Center for Space Studies\nMarket Intelligence\n\nAirbus Defence and Space\nCompetitive Intelligence"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Esteve Aqachmar",
+    "section": "Skills",
+    "text": "Skills\nBusiness Transformation | Risk Management | Product Strategy | Data Analytics"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Esteve Aqachmar",
+    "section": "Education",
+    "text": "Education\nPolitical Science Institute of Aix | France\nMA International Business Affairs\nMA Law, Economy, Management"
+  },
+  {
     "objectID": "posts/20240602/reportptt.html",
     "href": "posts/20240602/reportptt.html",
     "title": "Automated report",
@@ -203,10 +161,10 @@
     "text": "About\n\n\n\nThis memo shows how to use R to generate PPT slides from a dataset.\n\n\n\n\nLearnings\n\napplying functions & parameters\nusing purrr::map and pmap()\nstoring plots in a data frame\n\n\n\n\nResults\n Download PPT or see github.com/esteveaq/reportppt\n\n\nIntroduction\nThis is a sample analysis of deals per market segment (sectors) over time.\nRendering is done with Quarto and Knitr.\nInspired by a question on the quarto-cli repository.\n\n\n\n\nSetup\n# Load necessary libraries\nlibrary(tidyverse)\nlibrary(patchwork)\n# Set theme\ntheme_set(theme_minimal())\n\n# Get data \nsource(\"Data/data_deals.R\", echo = FALSE)\n\n\nParameter and Function\nThe function contains ggplots.\n# Define parameter (categories) to ensure proper slide order on the PPT file\nsector.select &lt;- custom_levels\n\n# Define function to create plots with a sector.select variable\nmake_plots &lt;- function(sector.select) {\n\n# define highlight filter for plot a\ndata.filt.a &lt;- data.plot.a %&gt;% \nfilter(sectors == sector.select)\ncolor.hex &lt;- \"#AA2841\"\n\n# Plot a\na &lt;-  \n  data.plot.a %&gt;% \n  ggplot(mapping = aes(x = fct_reorder(sectors, prop), y = prop)) +\n  geom_col(fill = \"gray70\") +\n  #highlight filter\n  geom_col(data = data.filt.a, fill = color.hex) + \n  coord_flip() +\n  geom_text(aes(label = paste0(prop*100, \"%\")), \n            vjust = .5,\n            hjust = 1.2,\n            size = 4,\n            color = \"white\") + #add labels\n  scale_y_continuous(labels = scales::percent) + # axis label in %\n  labs(x = \"Sectors\",\n       title = paste(\"Proportion of deals for the\",sector.select, \"sector\"), \n       subtitle = \"By number of deals\") #relabel \n\n# define highlight filter for plot b\ndata.filt.b &lt;- data.plot.b %&gt;% filter(sectors == sector.select)\n\n# Plot b\nb &lt;-\n  ggplot(data = data.plot.b, aes(x = year, y = n)) +\n  geom_col(fill = \"gray70\") + \n  #highlight filter\n  geom_col(data = data.filt.b, fill = color.hex) +\n  geom_text(data =  data.filt.b, mapping = aes(label = n), \n            vjust = -0.8, color = color.hex) \n\n# Assemble plots together using the 'library(patchwork)' syntax\n(a + b)\n}\n\n\nMap function and store output\nPlots are created for each category and stored in a data frame. Reference : Purrr package\n# Define the function that will map 'sector.select' to the function 'make_plots'\nplots &lt;- purrr::map(sector.select, make_plots)\n\n# Store generated plots in a tibble \nplots_df &lt;- tibble::tibble(\n  sector.select = sector.select,\n  plots = plots)\n\n\nCreate slides\n#| output: asis\n# Iterate over each row of the 'plots_df' data frame and generate slides using knitr (the markdown function that will generate actual PPT slides)\nresults_slides &lt;- purrr::pmap_chr(plots_df, function(sector.select, plots) {\n  knitr::knit_child(text = c(\n    \"# Sector `r sector.select`\",\n    \"```{r}\",\n    \"#| echo: false\",\n    \"plots\",\n    \"```\",\n    \"\"), envir = environment(), quiet = TRUE)\n})\n\n# Print results, and indent with '\\n' so Quarto recognizes different slides\ncat(results_slides, sep = '\\n')\n\n\n\n\n\n\n\nTip\n\n\n\nCan also can be achieved with a parameterized quarto report."
   },
   {
-    "objectID": "posts/20250123/opendata.html",
-    "href": "posts/20250123/opendata.html",
-    "title": "Open Data project",
-    "section": "",
-    "text": "Project\nBuilding an open data project for the city of Antibes, France to promote the publication of higher quality datasets. The project includes:\n\nGithub repository\nWebsite\nContributions to the data.gouv.fr platform\n\n\n\nLearnings\nLearnings include a mix of problem solving, visual communication and technical knowledge:\n\nReal-world data wrangling\nData visualization best practices\nGit and Github practice\nGoogle Analytics and cookie management\nDNS and subdomains management\nStatic reporing framework (html rendering)\n\n\n\nOverview\n\n\n\nLinks\nWebsite esteveaq.github.io/antibesdata\nRepo github.com/esteveaq/antibesdata"
+    "objectID": "index.html#certifications",
+    "href": "index.html#certifications",
+    "title": "Esteve Aqachmar",
+    "section": "Certifications",
+    "text": "Certifications\nAmazon Web Services (AWS) Certified Cloud Practitioner (view)\nGoogle Data Analytics Professional Certificate (view)"
   }
 ]

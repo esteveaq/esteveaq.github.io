@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "!README.md"
 
 website:
 #  title: "Esteve Aqachmar"
@@ -10,7 +13,7 @@ website:
   #   type: express
   #   style: simple
   navbar:
-    background: "#243B9D"
+    background: "#002D73"
     left:
       - href: index.qmd
     right: 
@@ -32,12 +35,12 @@ website:
       - icon: github
         href: https://github.com/esteveaq 
       - text: "2025"
-    background: "#243B9D"
+    background: "#002D73"
 
 format:
   html:
     theme: cosmo
- #   css: styles.css
+    linkcolor: "#002D73"
     toc: false
 
 
