@@ -8,8 +8,6 @@ about:
   image: profile.jpg
   image-width: 10em
   links:
-    - text: CV
-      url: "resume.pdf"
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/esteveaqachmar/
@@ -21,25 +19,28 @@ about:
       href: https://github.com/esteveaq
 ---
 
-New York based business development professional experienced in risk management & business transformation with a focus on analytics. Lead multiple programs within Fortune Global 500 companies. My passion is to unite people and technology to build impactful insights 📊
+New York based business development professional transforming complex challenges into actionable solutions combining deep analysis, impactful visuals, and communication expertise. Lead multiple programs within Fortune Global 500 companies. I unite people and technology to drive meaningful change 📊
 
 ## Experience
 
-**Ministry of Finance and Economy**\
-M&A Risk Management
+**Data Analysis for Strategy & Innovation**\
+Thales Cyber Security Products
 
-**Thales Group**\
-Product Strategy — PMO\
+**Risk Controls**\
+Ministry of Finance (France), Foreign Investment Controls
 
-**National Center for Space Studies**\
-Market Intelligence\
+**Product Strategy — PMO**\
+Thales Group
 
-**Airbus Defence and Space**\
-Competitive Intelligence\
+**Market Intelligence**\
+National Center for Space Studies
+
+**Competitive Intelligence**\
+Airbus Defence and Space\
 
 ## Skills
 
-Business Transformation \| Risk Management \| Product Strategy \| Data Analytics
+Strategy \| Business Development \| Data Analytics
 
 ## Certifications
 
@@ -48,6 +49,14 @@ Google Data Analytics Professional Certificate ([view](https://www.credly.com/ba
 
 ## Education
 
-**Political Science Institute of Aix \| France**\
 MA International Business Affairs\
 MA Law, Economy, Management\
+-\
+Political Science Institute of Aix \| France
+
+## Tools
+
+R\
+Python\
+SQL\
+Git\

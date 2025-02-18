@@ -25,11 +25,11 @@ Building an open data project for the city of Antibes, France to promote the pub
 
 # Learnings
 
-Learnings include a mix of problem solving, visual communication and technical knowledge:
+Learnings include problem solving, visual communication and technical knowledge:
 
--   Real-world data wrangling
--   Data visualization best practices
--   Git and Github practice
+-   Data wrangling
+-   Data visualization
+-   Versioning : Git and Github
 -   Static reporing framework (html rendering)
 
 # Overview
