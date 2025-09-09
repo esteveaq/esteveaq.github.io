@@ -2,7 +2,7 @@
 title: "Esteve Aqachmar"
 format: 
   html:
-    mainfont: "Helvetica Neue, Trebuchet MS, Sans-Serif"
+    mainfont: "Helvetica Neue, Aptos, Trebuchet MS, Sans-Serif"
 about: 
   template: solana
   image: profile.jpg
@@ -11,15 +11,12 @@ about:
     - icon: linkedin
       text: Linkedin
       href: https://www.linkedin.com/in/esteveaqachmar/
-    - icon: twitter-x
-      text: Twitter
-      href: https://twitter.com/esteveaqa
     - icon: github
       text: Github
       href: https://github.com/esteveaq
 ---
 
-New York based business development professional transforming complex challenges into actionable solutions combining deep analysis, impactful visuals, and communication expertise. Lead multiple programs within Fortune Global 500 companies. I unite people and technology to drive meaningful change 📊
+Business Development professional in New York, transforming complex challenges into actionable solutions combining deep analysis, impactful visuals, and communication expertise. Lead multiple programs within Fortune Global 500 companies. I unite people and technology to drive meaningful change 📊
 
 ## Experience
 
@@ -40,7 +37,7 @@ Airbus Defence and Space\
 
 ## Skills
 
-Strategy \| Business Development \| Data Analytics
+Strategy \| Data Analytics \| Business Development
 
 ## Certifications
 
@@ -51,7 +48,6 @@ Google Data Analytics Professional Certificate ([view](https://www.credly.com/ba
 
 MA International Business Affairs\
 MA Law, Economy, Management\
--\
 Political Science Institute of Aix \| France
 
 ## Tools
