@@ -8,6 +8,7 @@ project:
 website:
 #  title: "Esteve Aqachmar"
   search: false
+  favicon: logo1.png
   google-analytics: "G-6757JXF874"
   # cookie-consent: # U.S visitors only
   #   type: express
