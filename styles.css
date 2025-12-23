@@ -1,0 +1,5 @@
+.italic-light {
+  font-style: italic;
+  font-weight: 400;   /* lighter */
+  color: #A2A3A2;     /* optional: softer gray */
+}
