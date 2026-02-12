@@ -23,23 +23,23 @@ Business Development professional in New York, transforming complex challenges i
 
 **Strategy & Business Analysis**\
 Thales Cyber Security Products\
-<span class="italic-light">2025 - now</span>
+[2025 - current]{.italic-light}
 
 **Investment Controls**\
 Ministry of Finance, France\
-<span class="italic-light">2021 - 2023</span>
+[2021 - 2023]{.italic-light}
 
 **Product Strategy — PMO**\
 Thales Group\
-<span class="italic-light">2018 - 2021</span>
+[2018 - 2021]{.italic-light}
 
 **Market Intelligence**\
 National Center for Space Studies\
-<span class="italic-light">2015 - 2017</span>
+[2015 - 2017]{.italic-light}
 
 **Competitive Intelligence**\
 Airbus Defence and Space\
-<span class="italic-light">2013 - 2014</span>
+[2013 - 2014]{.italic-light}
 
 ## Skills
 
@@ -47,6 +47,7 @@ Strategy \| Data Analytics \| Business Development
 
 ## Certifications
 
+Business Strategy from Wharton: Competitive Advantage ([view](https://courses.edx.org/certificates/aabfc023ecae4b958123ccf309c9a84a))\
 Amazon Web Services (AWS) Certified Cloud Practitioner ([view](https://www.credly.com/badges/fee26a74-e48d-4463-a447-c8adb12a0011/linked_in_profile))\
 Google Data Analytics Professional Certificate ([view](https://www.credly.com/badges/a144d566-faae-4cb4-9a0a-1531843c7a9f/public_url))
 
@@ -60,5 +61,4 @@ Political Science Institute of Aix \| France
 
 R\
 Python\
-SQL\
 Git\
