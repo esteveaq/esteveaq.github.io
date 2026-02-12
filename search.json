@@ -32,7 +32,7 @@
     "href": "posts/20240531/ggplotmemo.html#create-data-frame",
     "title": "Data vizualisation",
     "section": "Create data frame",
-    "text": "Create data frame\n\n# create tibbles by combining vectors\nevolution &lt;-\n  tibble(dates, sectors, regions, dealsize, revenues)\n  \n#convert character variables to factors\nevolution &lt;-\n  evolution %&gt;%\n  mutate_if(sapply(evolution, is.character), as.factor) %&gt;% \n  print()\n\n# A tibble: 400 × 5\n   dates      sectors regions dealsize revenues\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt;\n 1 2014-01-31 sea     EMEA         394      261\n 2 2014-02-10 sea     EMEA         702      384\n 3 2014-02-18 ground  AUS          221      573\n 4 2014-03-20 land    LATAM        990      216\n 5 2014-03-24 land    EMEA         380      800\n 6 2014-04-05 sea     EMEA         705      547\n 7 2014-04-30 land    EMEA         303      214\n 8 2014-05-14 sea     LATAM        142      496\n 9 2014-05-21 sea     EMEA          71      358\n10 2014-05-31 sea     EMEA         703      465\n# ℹ 390 more rows\n\n#filter year\nevolution &lt;-\n  evolution %&gt;%\n  filter(dates &gt; \"2015-01-01\", \n         dates &lt; \"2023-01-01\")"
+    "text": "Create data frame\n\n# create tibbles by combining vectors\nevolution &lt;-\n  tibble(dates, sectors, regions, dealsize, revenues)\n  \n#convert character variables to factors\nevolution &lt;-\n  evolution %&gt;%\n  mutate_if(sapply(evolution, is.character), as.factor) %&gt;% \n  print()\n\n# A tibble: 400 × 5\n   dates      sectors regions dealsize revenues\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt;\n 1 2014-01-31 space   APAC         392      207\n 2 2014-02-10 land    APAC         255      341\n 3 2014-02-18 space   EMEA          49      303\n 4 2014-03-20 air     EMEA         479      760\n 5 2014-03-24 radio   NAM           69      261\n 6 2014-04-05 land    LATAM        679      384\n 7 2014-04-30 land    APAC         918      573\n 8 2014-05-14 land    NAM          332      216\n 9 2014-05-21 sea     LATAM        394      800\n10 2014-05-31 sea     EMEA         702      547\n# ℹ 390 more rows\n\n#filter year\nevolution &lt;-\n  evolution %&gt;%\n  filter(dates &gt; \"2015-01-01\", \n         dates &lt; \"2023-01-01\")"
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html#set-theme",
@@ -67,7 +67,7 @@
     "href": "posts/20240531/ggplotmemo.html#summary-stats",
     "title": "Data vizualisation",
     "section": "Summary stats",
-    "text": "Summary stats\n\n\nCode\ndata.evolution.summary &lt;-\n  evolution %&gt;%\n  group_by(sectors) %&gt;%\n  summarize(meandeal = mean(dealsize), \n            mediandeal = median(dealsize), \n            max = max(dealsize), \n            min = min(dealsize), \n            IQR = IQR(dealsize), \n            NBdeals = n()) %&gt;%\n  arrange(mediandeal)\ndata.evolution.summary\n\n\n# A tibble: 6 × 7\n  sectors meandeal mediandeal   max   min   IQR NBdeals\n  &lt;fct&gt;      &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;   &lt;int&gt;\n1 ground      416.       296    999    12  460.      23\n2 land        457.       428    989    28  512.      71\n3 sea         469.       434.   984    17  469       60\n4 space       503.       478.   999     9  480.      52\n5 radio       521.       541    981    14  508       53\n6 air         540.       576.   966    98  324.      18\n\n\nCode\n# Note : it is also possible to use a library such as Janitor for this."
+    "text": "Summary stats\n\n\nCode\ndata.evolution.summary &lt;-\n  evolution %&gt;%\n  group_by(sectors) %&gt;%\n  summarize(meandeal = mean(dealsize), \n            mediandeal = median(dealsize), \n            max = max(dealsize), \n            min = min(dealsize), \n            IQR = IQR(dealsize), \n            NBdeals = n()) %&gt;%\n  arrange(mediandeal)\ndata.evolution.summary\n\n\n# A tibble: 6 × 7\n  sectors meandeal mediandeal   max   min   IQR NBdeals\n  &lt;fct&gt;      &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;   &lt;int&gt;\n1 space       381.       312.   907    11  366.      52\n2 sea         428.       389    981    14  396.      59\n3 land        484.       468.   990     9  475       72\n4 radio       535.       588    999    12  474       49\n5 ground      565.       642    993    60  473.      24\n6 air         656.       729    999    95  432.      18\n\n\nCode\n# Note : it is also possible to use a library such as Janitor for this."
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html#sum",
@@ -102,7 +102,7 @@
     "href": "posts/20240531/ggplotmemo.html#prepare-data",
     "title": "Data vizualisation",
     "section": "Prepare data",
-    "text": "Prepare data\n\n\nCode\n#get year, month, week\ndata.heatmap.weekcount &lt;-\n  evolution %&gt;%\n    mutate(year = year(dates), \n           month = month(dates, label = TRUE, abbr= TRUE), \n           wk = week(dates))\ndata.heatmap.weekcount\n\n\n# A tibble: 277 × 8\n   dates      sectors regions dealsize revenues  year month    wk\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;ord&gt; &lt;dbl&gt;\n 1 2015-01-09 radio   APAC         783      459  2015 Jan       2\n 2 2015-01-13 air     LATAM        689      826  2015 Jan       2\n 3 2015-01-14 air     EMEA         966      368  2015 Jan       2\n 4 2015-01-21 sea     LATAM        865      368  2015 Jan       3\n 5 2015-02-11 land    LATAM        870      729  2015 Feb       6\n 6 2015-02-17 sea     APAC         424      600  2015 Feb       7\n 7 2015-03-21 space   EMEA         458      138  2015 Mar      12\n 8 2015-03-24 radio   EMEA         828      447  2015 Mar      12\n 9 2015-04-03 land    AUS          930      799  2015 Apr      14\n10 2015-04-18 radio   EMEA         346      733  2015 Apr      16\n# ℹ 267 more rows"
+    "text": "Prepare data\n\n\nCode\n#get year, month, week\ndata.heatmap.weekcount &lt;-\n  evolution %&gt;%\n    mutate(year = year(dates), \n           month = month(dates, label = TRUE, abbr= TRUE), \n           wk = week(dates))\ndata.heatmap.weekcount\n\n\n# A tibble: 274 × 8\n   dates      sectors regions dealsize revenues  year month    wk\n   &lt;date&gt;     &lt;fct&gt;   &lt;fct&gt;      &lt;int&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;ord&gt; &lt;dbl&gt;\n 1 2015-01-09 space   APAC         564      359  2015 Jan       2\n 2 2015-01-13 land    EMEA         703      438  2015 Jan       2\n 3 2015-01-14 ground  EMEA         165      447  2015 Jan       2\n 4 2015-01-21 land    APAC         366      187  2015 Jan       3\n 5 2015-02-11 space   AUS           18      459  2015 Feb       6\n 6 2015-02-17 space   APAC         681      826  2015 Feb       7\n 7 2015-03-21 sea     EMEA         321      368  2015 Mar      12\n 8 2015-03-24 land    EMEA         807      368  2015 Mar      12\n 9 2015-04-03 land    APAC         783      729  2015 Apr      14\n10 2015-04-18 radio   APAC         689      600  2015 Apr      16\n# ℹ 264 more rows"
   },
   {
     "objectID": "posts/20240531/ggplotmemo.html#week",
@@ -137,7 +137,7 @@
     "href": "index.html#experience",
     "title": "Esteve Aqachmar",
     "section": "Experience",
-    "text": "Experience\nStrategy & Business Analysis\nThales Cyber Security Products\n2025 - now\nInvestment Controls\nMinistry of Finance, France\n2021 - 2023\nProduct Strategy — PMO\nThales Group\n2018 - 2021\nMarket Intelligence\nNational Center for Space Studies\n2015 - 2017\nCompetitive Intelligence\nAirbus Defence and Space\n2013 - 2014"
+    "text": "Experience\nStrategy & Business Analysis\nThales Cyber Security Products\n2025 - current\nInvestment Controls\nMinistry of Finance, France\n2021 - 2023\nProduct Strategy — PMO\nThales Group\n2018 - 2021\nMarket Intelligence\nNational Center for Space Studies\n2015 - 2017\nCompetitive Intelligence\nAirbus Defence and Space\n2013 - 2014"
   },
   {
     "objectID": "index.html#skills",
@@ -151,7 +151,7 @@
     "href": "index.html#certifications",
     "title": "Esteve Aqachmar",
     "section": "Certifications",
-    "text": "Certifications\nAmazon Web Services (AWS) Certified Cloud Practitioner (view)\nGoogle Data Analytics Professional Certificate (view)"
+    "text": "Certifications\nBusiness Strategy from Wharton: Competitive Advantage (view)\nAmazon Web Services (AWS) Certified Cloud Practitioner (view)\nGoogle Data Analytics Professional Certificate (view)"
   },
   {
     "objectID": "index.html#education",
@@ -165,7 +165,7 @@
     "href": "index.html#tools",
     "title": "Esteve Aqachmar",
     "section": "Tools",
-    "text": "Tools\nR\nPython\nSQL\nGit"
+    "text": "Tools\nR\nPython\nGit"
   },
   {
     "objectID": "posts/20240602/reportptt.html",
